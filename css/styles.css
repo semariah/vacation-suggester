@@ -4,3 +4,24 @@ body {
   margin: 4px;
   background-color: #ffd8ca;
 }
+
+#submit{
+  margin-top: 30px;
+}
+
+#question1 {
+  margin-top: 30px;
+}
+
+#question2 {
+  margin-top: 40px;
+}
+
+img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#result {
+  display: none;
+}
