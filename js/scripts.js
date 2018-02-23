@@ -1,10 +1,12 @@
 $(document).ready(function(){
   $("form#vacay").submit(function() {
     event.preventDefault();
-    var enterName = $("#Name").val();
-    var enterDate = parseInt($("#Date").val());
+    var enterName = $("input#Name").val();
+    var enterDate = parseInt($("input#Date").val());
     var trip = $("input:radio[name=trip]:checked").val();
-    var result = add(number1, number2);
-    $("#output").text(result);
+    console.log("enterName :" + enterName)
+    console.log("enterDate:" + enterDate)
+    //var result = add(enterName, enterDate);
+    //$("#output").text(result);
   });
-})
+});
