@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js "type="text/javascript"></script>
+    <title>Vacation suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>A vacation suggester</h1>
+        <p>This website is one of the best vacation destination guide and suggester based on the answers you provide on the questionair below.</p>
+      </div>
+      <p>This website is created inorder to help people who are planning a trip to diffrent parts of the world. It is a suggester based on the answers you provide for the questions. That way it will cut time to think and search destinations blindly, gives accurate info about the destination sites regarding the food, the weather of the places and more. It will be helping you find the best place to visit based on the mood you want to have for vacation.</p>
+
+      <form class="radio" id="vacay">
+
+        <!-- Question 1-->
+
+        <div class="form-group">
+          <label for="name" class="col-sm-2 control-label">What is your name</label>
+          <input type="text" class="form-control" id="Name" name="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="date">What is your prefered date to travel?</label>
+          <input type="date" class="form-control" id="Date" name="date" placeholder="Date">
+        </div>
+
+        <!-- Question 2-->
+
+        <div class="container">
+          <div class="" id="question2">
+            <h3>What is the purpose of your trip?</h3>
+          </div>
+
+          <label class="radio-inline">
+            <input type="radio" name="trip" id="Honeymoon" value="honeymoon"> Honeymoon
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="trip" id="Entertianment" value="entertainment"> Entertianment
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="trip" id="Bussiness" value="bussiness"> Bussiness Trip
+          </label>
+        </div>
+
+        <!-- Question 3 -->
+
+        <div class="container">
+          <div class="" id="question3">
+            <h3>What is your preferences on weather?</h3>
+          </div>
+
+          <label class="radio-inline">
+            <input type="radio" name="weather" id="Warm" value="warm"> Warm
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="weather" id="Tropical" value="tropical"> Tropical
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="weather" id="Cold" value="cold"> Cold
+          </label>
+
+          <!-- Question 4 -->
+
+          <div class="" id="question4">
+            <h3>Which part of the place do you want to visit?</h3>
+          </div>
+
+          <label class="radio-inline">
+            <input type="radio" name="nature" id="Beach" value="beach"> Beach
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="nature" id="Desert" value="desert"> Desert
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="nature" id="Town" value="town"> Town
+          </label>
+
+          <!-- Question 5 -->
+
+          <div class="" id="question5">
+            <h3>What kind of foods are you thinking to have while on your trip?</h3>
+          </div>
+
+          <label class="radio-inline">
+            <input type="radio" name="food" id="Seafood" value="seafood"> Seafood
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="food" id="Mediterranian" value="mediterranian"> Mediterranian
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="food" id="Scandinavian-Soup" value="scandinavian-soup"> Scandinavian-Soup
+          </label>
+        </div>
+        <div class="container">
+          <div>
+            <button id="submit" type="submit" class="btn btn-success">vacation!</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+  </body>
+</html>
