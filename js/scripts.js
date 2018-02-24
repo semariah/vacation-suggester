@@ -13,6 +13,8 @@ $(document).ready(function(){
     } else if (trip ==="Bussiness Trip" && weather === "Tropical" && food === "Seafood" ){
       var response = $("div#Bankok").show();
     }
+      $(#result).text(response);
+      alert("result:" + result);
 
 //debagger
     console.log("enterName :" + enterName)
