@@ -10,17 +10,17 @@ $(document).ready(function(){
     var response;
 
     if ((trip === "Honeymoon") && (weather === "Warm") && (nature != "Desert") && (food === "Mediterranian")){
-      response = $("#Cairo").show();
-      response = $("#Bankok").hide();
-      response = $("#Lapland").hide();
+      $("#Cairo").show();
+      //response = $("#Bankok").hide();
+      //response = $("#Lapland").hide();
     } else if ((trip === "Bussiness Trip") && (weather === "Tropical") && (nature === "Beach") && (food === "Seafood")){
-      response = $("#Bankok").show();
-      response = $("#Cairo").hide();
-      response = $("#Lapland").hide();
-    } else if ((trip === "Entertianment") && (weather === "Cold") && (nature != "Town") && (food === "Scandinavian-Soup")){
-      response = $("#Lapland").show();
-      response = $("#Cairo").hide();
-      response = $("#Bankok").hide();
+      $("#Bankok").show();
+      //response = $("#Cairo").hide();
+      //response = $("#Lapland").hide();
+    } else ((trip === "Entertianment") && (weather === "Cold") && (nature != "Town") && (food === "Scandinavian-Soup")){
+      $("#Lapland").show();
+      //response = $("#Cairo").hide();
+      //response = $("#Bankok").hide();
     }
     $("#result").show();
     $(".name").text(enterName);
