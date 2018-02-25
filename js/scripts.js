@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("form#vacay").submit(function() {
+  $("form#vacay").submit(function(event){
     event.preventDefault();
     var enterName = $("input#Name").val();
     var enterDate = parseInt($("input#Date").val());
@@ -9,21 +9,22 @@ $(document).ready(function(){
     var food = $("input:radio[name=food]:checked").val();
     var response;
 
-    if ((trip === "Honeymoon") && (weather === "Warm") && (nature != "Desert") && (food === "Mediterranian")){
-      $("#Cairo").show();
-      //response = $("#Bankok").hide();
-      //response = $("#Lapland").hide();
-    } else if ((trip === "Bussiness Trip") && (weather === "Tropical") && (nature === "Beach") && (food === "Seafood")){
-      $("#Bankok").show();
-      //response = $("#Cairo").hide();
-      //response = $("#Lapland").hide();
-    } else ((trip === "Entertianment") && (weather === "Cold") && (nature != "Town") && (food === "Scandinavian-Soup")){
-      $("#Lapland").show();
-      //response = $("#Cairo").hide();
-      //response = $("#Bankok").hide();
-    }
     $("#result").show();
     $(".name").text(enterName);
+    console.log(trip);
+    if ((trip === "honeymoon") && (weather === "warm") && (nature === "desert") && (food === "mediterranian")){
+      //$("#Cairo").show();
+      response = $("#Bankok").hide();
+      response = $("#Lapland").hide();
+    } else if ((trip === "bussiness") && (weather === "cold") && (nature === "town") && (food === "scandinavian-soup")){
+      //$("#Lapland").show();
+      response = $("#Cairo").hide();
+      response = $("#Bankok").hide();
+    } else {
+      //$("#Bankok").show();
+      response = $("#Cairo").hide();
+      response = $("#Lapland").hide();
+    }
 
 
 
@@ -38,7 +39,6 @@ $(document).ready(function(){
     //console.log("food:" + food);
     //console.log($("#Cairo").show());
 
-    //var result = add(enterName, enterDate);
-    //$("#output").text(result);
+
   });
 });
