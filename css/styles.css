@@ -11,8 +11,10 @@ img {
 }
 
 .jumbotron {
-  text-shadow: 4px 4px #ffd8ca;
-  background-image: url("https://t-ec.bstatic.com/images/hotel/max1024x768/100/100853831.jpg")
+  text-shadow: 2px 2px #ffd8ca;
+  background-image: url("http://www.todayifoundout.com/wp-content/uploads/2010/05/blue-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #submit{
